@@ -1,0 +1,104 @@
+@import "reset.scss";
+@import "mixin";
+
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.our-story {
+  background: white;
+
+  .container {
+    text-align: center;
+
+    .content-center {
+      padding: 140px 0;
+      position: relative;
+
+      @include content-center(false);
+
+      .wrapper {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+
+        display: flex;
+
+        position: absolute;
+        bottom: 30%;
+        left: 32%;
+
+        transform: translateY(-50%);
+        p {
+          color: rgb(162, 162, 162);
+        }
+
+        a {
+          color: rgb(162, 162, 162);
+          padding-left: 5px;
+          text-transform: capitalize;
+          text-decoration: underline;
+          
+        }
+      }
+    }
+  }
+}
+
+.our-expertise{
+  background: rgba(0,0,0,.16);
+
+  .container{
+    padding: 140px 0;
+    text-align: center;
+
+    .content-center{
+      @include content-center(false);
+    }
+  }
+}
+
+.our-portfolio{
+  .container{
+    text-align: center;
+
+    .content-center{
+      padding: 90px  0;
+      @include content-center(false);
+    }
+  }
+
+  .filter-portfolio{
+    .filter-menu{
+      .container{
+        nav{
+          ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li{
+              cursor: pointer;
+              text-transform: uppercase;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .list-images{
+      display: flex;
+
+      .image-box{
+        flex-basis: 48%;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+}
+
+button, input {
+  border: none;
+}
+
+button:focus, input:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+*::-moz-selection {
+  background: pink;
+  color: white;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: pink;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+}
+
+button, input {
+  border: none;
+}
+
+button:focus, input:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+*::-moz-selection {
+  background: pink;
+  color: white;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: pink;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.our-story {
+  background: white;
+}
+
+.our-story .container {
+  text-align: center;
+}
+
+.our-story .container .content-center {
+  padding: 140px 90px 140px;
+  position: relative;
+}
+
+.our-story .container .content-center h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.our-story .container .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-story .container .content-center h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.our-story .container .content-center .description {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.our-story .container .content-center .description:first-letter {
+  text-transform: capitalize;
+}
+
+.our-story .container .content-center .wrapper {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 30%;
+  left: 32%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.our-story .container .content-center .wrapper p {
+  color: #a2a2a2;
+}
+
+.our-story .container .content-center .wrapper a {
+  color: #a2a2a2;
+  padding-left: 5px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.our-expertise {
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.our-expertise .container {
+  padding: 140px 90px 140px;
+  text-align: center;
+}
+
+.our-expertise .container .content-center h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.our-expertise .container .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-expertise .container .content-center h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.our-expertise .container .content-center .description {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.our-expertise .container .content-center .description:first-letter {
+  text-transform: capitalize;
+}
+
+.our-portfolio .container {
+  text-align: center;
+}
+
+.our-portfolio .container .content-center {
+  padding: 50px 90px 50px;
+}
+
+.our-portfolio .container .content-center h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.our-portfolio .container .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-portfolio .container .content-center h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.our-portfolio .container .content-center .description {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.our-portfolio .container .content-center .description:first-letter {
+  text-transform: capitalize;
+}
+
+.our-portfolio .filter-portfolio .filter-menu .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-portfolio .filter-portfolio .filter-menu .container nav ul li {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.our-portfolio .filter-portfolio .list-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box img {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  height: 650px;
+  background-image: url("https://ninetheme.com/themes/forester/wp-content/uploads/2018/05/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header .top-header {
+  height: 80px;
+  position: relative;
+}
+
+header .top-header::before {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid white;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+header .top-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top-header .container .menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top-header .container .menu nav ul li a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+header .top-header .container .menu nav ul li a:last-child {
+  padding-right: 0;
+}
+
+header .top-header .container .logo a {
+  padding: 5px;
+}
+
+header .top-header .container .logo a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .top-header .container .contact nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top-header .container .contact nav ul li a {
+  padding: 10px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+header .top-header .container .contact nav ul li a:last-child {
+  padding-right: 0;
+}
+
+header .top-header .container .contact nav ul li a:hover {
+  color: rgba(143, 138, 138, 0.562);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+header .top-header .container .contact nav ul li a i {
+  color: white;
+  font-size: 10px;
+}
+
+header .top-header .container .contact nav ul li a span {
+  margin-left: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header .top-header .container .contact nav ul li a span:first-child {
+  margin-left: 0;
+}
+
+header .bottom-header {
+  text-align: center;
+}
+
+header .bottom-header .container .content-center {
+  padding: 100px 90px 90px;
+}
+
+header .bottom-header .container .content-center h5 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+header .bottom-header .container .content-center h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+header .bottom-header .container .content-center h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+header .bottom-header .container .content-center .description {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+header .bottom-header .container .content-center .description:first-letter {
+  text-transform: capitalize;
+}
+
+header .bottom-header .container .button {
+  margin-top: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 15px 40px;
+  border-radius: 30px;
+  background: rgba(190, 208, 148, 0.8);
+}
+
+header .bottom-header .container .button:focus {
+  color: black;
+}
+/*# sourceMappingURL=header.css.map */

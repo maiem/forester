@@ -1,7 +1,7 @@
 
 @mixin content-center($color){
     h5 {
-        @if($color ==true){
+        @if($color == true){
             color: $primaryColor;
         }
         @else{
@@ -14,7 +14,7 @@
       }
 
       h1 {
-        @if($color ==true){
+        @if($color == true){
             color: $primaryColor;
         }
         @else{
@@ -27,7 +27,13 @@
         font-weight: 900;
       }
 
-      .discription {
+      h2{
+        text-transform: capitalize;
+        font-size: 40px;
+        font-weight: 900;
+      }
+
+      .description {
         font-size: 16px;
         font-weight: 500;
         text-transform: lowercase;

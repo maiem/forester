@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+}
+
+button, input {
+  border: none;
+}
+
+button:focus, input:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+*::-moz-selection {
+  background: pink;
+  color: white;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: pink;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.our-story {
+  background: white;
+}
+
+.our-story .container {
+  text-align: center;
+}
+
+.our-story .container .content-center {
+  padding: 140px 0;
+  position: relative;
+}
+
+.our-story .container .content-center h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.our-story .container .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-story .container .content-center h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-story .container .content-center .description {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.our-story .container .content-center .description:first-letter {
+  text-transform: capitalize;
+}
+
+.our-story .container .content-center .wrapper {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 30%;
+  left: 32%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.our-story .container .content-center .wrapper p {
+  color: #a2a2a2;
+}
+
+.our-story .container .content-center .wrapper a {
+  color: #a2a2a2;
+  padding-left: 5px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.our-expertise {
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.our-expertise .container {
+  padding: 140px 0;
+  text-align: center;
+}
+
+.our-expertise .container .content-center h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.our-expertise .container .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-expertise .container .content-center h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-expertise .container .content-center .description {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.our-expertise .container .content-center .description:first-letter {
+  text-transform: capitalize;
+}
+
+.our-portfolio .container {
+  text-align: center;
+}
+
+.our-portfolio .container .content-center {
+  padding: 90px  0;
+}
+
+.our-portfolio .container .content-center h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.our-portfolio .container .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-portfolio .container .content-center h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-portfolio .container .content-center .description {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.our-portfolio .container .content-center .description:first-letter {
+  text-transform: capitalize;
+}
+
+.our-portfolio .filter-portfolio .filter-menu .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-portfolio .filter-portfolio .filter-menu .container nav ul li {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.our-portfolio .filter-portfolio .list-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=home.css.map */
