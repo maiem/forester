@@ -64,7 +64,7 @@
 }
 
 .our-portfolio{
-  padding: 140px 0;
+  padding: 140px 0 0;
 
   .container{
     text-align: center;
@@ -116,47 +116,46 @@
         flex-basis: 48%;
         margin-bottom: 15px;
         position: relative;
+
+        &::before{
+          content: "";
+          width: 100%;
+          background: rgb(54, 54, 54);
+
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
       
         a{
           img{
             max-width: 100%;
-            //width: 100%;
-            //height: 100%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
           }
         }
 
-        &:hover{
-         .caption{
-          visibility: visible;
-          transition: all .4s linear;
-         }
-        }
+        // &:hover{
+        //  .caption{
+        //   visibility: visible;
+        //   opacity: 1;
+        //   transition: all .2s linear;
+        //  }
+        // }
 
         .caption{
           text-align: center;
           width: 100%;
           height: 100%;
 
-          &::before{
-            content: "";
-            width: 100%;
-              height: auto;
-            background: rgb(54, 54, 54);
-
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            //z-index: -1;
-          }
-
           position: absolute;
           top: 0;
           left: 0;
 
-          visibility: hidden;
-          transition: all .4s linear;
+          // visibility: hidden;
+          // opacity: 0;
+          //transition: all .2s linear;
 
           .content-center{
             position: absolute;
@@ -176,4 +175,42 @@
       }
     }
   }
+}
+
+.our-team{
+  .container{
+    padding: 140px 0 0;
+    text-align: center;
+
+    .wrapper{
+      .content-center{
+        @include content-center(false);
+      }
+    }
+
+    .slide{
+      margin-top: 30px;
+
+      .image-box{
+        img{
+          max-width: 100%;
+          width: 100%;
+        }
+
+        margin-right: 20px;
+
+        // &:last-child{
+        //   margin-right: 0;
+        // }
+      }
+    }
+  }
+}
+
+.our-description{
+  background-image: url('https://ninetheme.com/themes/forester/wp-content/uploads/2017/07/bg-7.jpg');
+  //background: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }

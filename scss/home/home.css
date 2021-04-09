@@ -182,7 +182,7 @@ button:focus, input:focus {
 }
 
 .our-portfolio {
-  padding: 140px 0;
+  padding: 140px 0 0;
 }
 
 .our-portfolio .container {
@@ -281,35 +281,27 @@ button:focus, input:focus {
   position: relative;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box a img {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.our-portfolio .filter-portfolio .list-images .image-box::before {
+  content: "";
+  width: 100%;
+  background: #363636;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box:hover .caption {
-  visibility: visible;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
+.our-portfolio .filter-portfolio .list-images .image-box a img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box .caption {
   text-align: center;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
-}
-
-.our-portfolio .filter-portfolio .list-images .image-box .caption::before {
-  content: "";
-  width: 100%;
-  height: auto;
-  background: #363636;
   position: absolute;
   top: 0;
   left: 0;
@@ -368,5 +360,72 @@ button:focus, input:focus {
 .our-portfolio .filter-portfolio .list-images .image-box .caption .content-center i {
   color: white;
   font-size: 10px;
+}
+
+.our-team .container {
+  padding: 140px 0 0;
+  text-align: center;
+}
+
+.our-team .container .wrapper .content-center h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.our-team .container .wrapper .content-center .discription {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: lowercase;
+}
+
+.our-team .container .wrapper .content-center .discription:first-letter {
+  text-transform: capitalize;
+}
+
+.our-team .container .wrapper .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-team .container .wrapper .content-center h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-team .container .wrapper .content-center h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.our-team .container .slide {
+  margin-top: 30px;
+}
+
+.our-team .container .slide .image-box {
+  margin-right: 20px;
+}
+
+.our-team .container .slide .image-box img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.our-description {
+  background-image: url("https://ninetheme.com/themes/forester/wp-content/uploads/2017/07/bg-7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 /*# sourceMappingURL=home.css.map */
