@@ -51,22 +51,40 @@ button:focus, input:focus {
 }
 
 .our-story .container {
+  padding: 140px 0;
   text-align: center;
 }
 
-.our-story .container .content-center {
-  padding: 140px 0;
+.our-story .container .wrapper {
+  width: 70%;
+  margin-left: 170px;
+}
+
+.our-story .container .wrapper .content-center {
   position: relative;
 }
 
-.our-story .container .content-center h5 {
+.our-story .container .wrapper .content-center h5 {
   color: black;
   text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-.our-story .container .content-center h1 {
+.our-story .container .wrapper .content-center .discription {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: lowercase;
+}
+
+.our-story .container .wrapper .content-center .discription:first-letter {
+  text-transform: capitalize;
+}
+
+.our-story .container .wrapper .content-center h1 {
   color: black;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -74,41 +92,38 @@ button:focus, input:focus {
   font-weight: 900;
 }
 
-.our-story .container .content-center h2 {
+.our-story .container .wrapper .content-center h2 {
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 900;
 }
 
-.our-story .container .content-center .description {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: lowercase;
-}
-
-.our-story .container .content-center .description:first-letter {
+.our-story .container .wrapper .content-center h3 {
   text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
 }
 
-.our-story .container .content-center .wrapper {
+.our-story .container .wrapper .content-center .btn-inner {
   width: 100%;
-  text-align: center;
   font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 30%;
-  left: 32%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-25%, 60px);
+          transform: translate(-25%, 60px);
 }
 
-.our-story .container .content-center .wrapper p {
+.our-story .container .wrapper .content-center .btn-inner p {
   color: #a2a2a2;
 }
 
-.our-story .container .content-center .wrapper a {
+.our-story .container .wrapper .content-center .btn-inner a {
   color: #a2a2a2;
   padding-left: 5px;
   text-transform: capitalize;
@@ -124,14 +139,27 @@ button:focus, input:focus {
   text-align: center;
 }
 
-.our-expertise .container .content-center h5 {
+.our-expertise .container .wrapper .content-center h5 {
   color: black;
   text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-.our-expertise .container .content-center h1 {
+.our-expertise .container .wrapper .content-center .discription {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: lowercase;
+}
+
+.our-expertise .container .wrapper .content-center .discription:first-letter {
+  text-transform: capitalize;
+}
+
+.our-expertise .container .wrapper .content-center h1 {
   color: black;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -139,38 +167,49 @@ button:focus, input:focus {
   font-weight: 900;
 }
 
-.our-expertise .container .content-center h2 {
+.our-expertise .container .wrapper .content-center h2 {
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 900;
 }
 
-.our-expertise .container .content-center .description {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: lowercase;
+.our-expertise .container .wrapper .content-center h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
 }
 
-.our-expertise .container .content-center .description:first-letter {
-  text-transform: capitalize;
+.our-portfolio {
+  padding: 140px 0;
 }
 
 .our-portfolio .container {
   text-align: center;
 }
 
-.our-portfolio .container .content-center {
-  padding: 90px  0;
-}
-
-.our-portfolio .container .content-center h5 {
+.our-portfolio .container .wrapper .content-center h5 {
   color: black;
   text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-.our-portfolio .container .content-center h1 {
+.our-portfolio .container .wrapper .content-center .discription {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: lowercase;
+}
+
+.our-portfolio .container .wrapper .content-center .discription:first-letter {
+  text-transform: capitalize;
+}
+
+.our-portfolio .container .wrapper .content-center h1 {
   color: black;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -178,53 +217,156 @@ button:focus, input:focus {
   font-weight: 900;
 }
 
-.our-portfolio .container .content-center h2 {
+.our-portfolio .container .wrapper .content-center h2 {
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 900;
 }
 
-.our-portfolio .container .content-center .description {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: lowercase;
-}
-
-.our-portfolio .container .content-center .description:first-letter {
+.our-portfolio .container .wrapper .content-center h3 {
   text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
 }
 
-.our-portfolio .filter-portfolio .filter-menu .container nav ul {
+.our-portfolio .filter-portfolio .container .filter-menu nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.our-portfolio .filter-portfolio .filter-menu .container nav ul li {
+.our-portfolio .filter-portfolio .container .filter-menu nav ul li {
   cursor: pointer;
   text-transform: uppercase;
-  padding: 5px;
+  padding: 40px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.our-portfolio .filter-portfolio .container .filter-menu nav ul li.active {
+  color: #a2a2a2;
+}
+
+.our-portfolio .filter-portfolio .container .filter-menu nav ul li:hover {
+  color: #a2a2a2;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .our-portfolio .filter-portfolio .list-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  margin-bottom: 15px;
+  position: relative;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box img {
+.our-portfolio .filter-portfolio .list-images .image-box a img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box:hover .caption {
+  visibility: visible;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption {
+  text-align: center;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption::before {
+  content: "";
+  width: 100%;
+  height: auto;
+  background: #363636;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center h5 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center .discription {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: lowercase;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center .discription:first-letter {
+  text-transform: capitalize;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center h2 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center i {
+  color: white;
+  font-size: 10px;
 }
 /*# sourceMappingURL=home.css.map */

@@ -1,6 +1,6 @@
-@import "reset.scss";
-@import "home.scss";
-@import "mixin.scss";
+@import 'reset';
+@import 'home';
+@import 'mixin';
 
 header {
   height: 650px;
@@ -128,26 +128,29 @@ header {
 
   .bottom-header {
     text-align: center;
+
     .container {
-      .content-center {
-        padding: 100px 90px 90px;
+      padding: 140px 0;
+      
+      .wrapper {
+        .content-center {
+          @include content-center(true);
+        }
 
-        @include content-center(true);
-      }
+        .button {
+          margin-top: 40px;
 
-      .button {
-        margin-top: 40px;
+          color: white;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 500;
+          padding: 15px 40px;
+          border-radius: 30px;
+          background: rgba(190, 208, 148, 0.8);
 
-        color: white;
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 500;
-        padding: 15px 40px;
-        border-radius: 30px;
-        background: rgba(190, 208, 148, 0.8);
-
-        &:focus {
-          color: $secondaryColor;
+          &:focus {
+            color: $secondaryColor;
+          }
         }
       }
     }
