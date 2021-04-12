@@ -48,6 +48,56 @@ textarea:focus {
           box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  background: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+*::-moz-selection {
+  background: pink;
+  color: white;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: pink;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
   width: 1100px;
   margin: 0 auto;
@@ -760,7 +810,6 @@ textarea:focus {
   height: 400px;
   background-image: url("https://ninetheme.com/themes/forester/wp-content/uploads/2017/07/bg-7.jpg");
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.301);
   position: relative;
 }
 
@@ -1255,4 +1304,89 @@ textarea:focus {
   height: 100%;
   cursor: pointer;
 }
-/*# sourceMappingURL=home.css.map */
+
+footer {
+  background: #000;
+}
+
+footer .container {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .left .sub-menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .left .sub-menu nav ul li a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+footer .container .left .sub-menu nav ul li a:last-child {
+  padding-right: 0;
+}
+
+footer .container .left .sub-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .left .sub-contact .col {
+  margin-right: 20px;
+}
+
+footer .container .left .sub-contact .col:last-child {
+  margin-right: 0;
+}
+
+footer .container .left .sub-contact .col i {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+footer .container .right {
+  text-align: end;
+}
+
+footer .container .right .logo img {
+  max-width: 100%;
+  width: 70%;
+}
+
+footer .container .right p {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: white;
+}
+
+footer .container .right a {
+  font-size: 14px;
+  color: rgba(190, 208, 148, 0.8);
+}
+/*# sourceMappingURL=footer.css.map */

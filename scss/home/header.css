@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
 }
 
-body, html {
+body,
+html {
   scroll-behavior: smooth;
 }
 
@@ -18,11 +20,16 @@ a {
   text-decoration: none;
 }
 
-button, input {
+button,
+input,
+textarea {
   border: none;
+  background: none;
 }
 
-button:focus, input:focus {
+button:focus,
+input:focus,
+textarea:focus {
   border: none;
   outline: none;
   background: none;
@@ -44,10 +51,12 @@ button:focus, input:focus {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
 }
 
-body, html {
+body,
+html {
   scroll-behavior: smooth;
 }
 
@@ -61,11 +70,16 @@ a {
   text-decoration: none;
 }
 
-button, input {
+button,
+input,
+textarea {
   border: none;
+  background: none;
 }
 
-button:focus, input:focus {
+button:focus,
+input:focus,
+textarea:focus {
   border: none;
   outline: none;
   background: none;
@@ -107,23 +121,21 @@ button:focus, input:focus {
   position: relative;
 }
 
-.our-story .container .wrapper .content-center h5 {
+.our-story .container .wrapper .content-center .title {
   color: black;
   text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
-.our-story .container .wrapper .content-center .discription {
+.our-story .container .wrapper .content-center h5 {
   color: black;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.8;
-  text-transform: lowercase;
 }
 
-.our-story .container .wrapper .content-center .discription:first-letter {
+.our-story .container .wrapper .content-center h5:first-letter {
   text-transform: capitalize;
 }
 
@@ -136,17 +148,28 @@ button:focus, input:focus {
 }
 
 .our-story .container .wrapper .content-center h2 {
+  color: black;
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 900;
 }
 
 .our-story .container .wrapper .content-center h3 {
+  color: black;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
-  color: white;
-  margin-bottom: 10px;
+}
+
+.our-story .container .wrapper .content-center p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-story .container .wrapper .content-center p::first-letter {
+  text-transform: capitalize;
 }
 
 .our-story .container .wrapper .content-center .btn-inner {
@@ -155,6 +178,9 @@ button:focus, input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -168,13 +194,12 @@ button:focus, input:focus {
 
 .our-story .container .wrapper .content-center .btn-inner a {
   color: #a2a2a2;
-  padding-left: 5px;
   text-transform: capitalize;
   text-decoration: underline;
 }
 
 .our-expertise {
-  background: rgba(0, 0, 0, 0.16);
+  background: #f2f4ec;
 }
 
 .our-expertise .container {
@@ -182,23 +207,21 @@ button:focus, input:focus {
   text-align: center;
 }
 
-.our-expertise .container .wrapper .content-center h5 {
+.our-expertise .container .wrapper .content-center .title {
   color: black;
   text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
-.our-expertise .container .wrapper .content-center .discription {
+.our-expertise .container .wrapper .content-center h5 {
   color: black;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.8;
-  text-transform: lowercase;
 }
 
-.our-expertise .container .wrapper .content-center .discription:first-letter {
+.our-expertise .container .wrapper .content-center h5:first-letter {
   text-transform: capitalize;
 }
 
@@ -211,44 +234,161 @@ button:focus, input:focus {
 }
 
 .our-expertise .container .wrapper .content-center h2 {
+  color: black;
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 900;
 }
 
 .our-expertise .container .wrapper .content-center h3 {
+  color: black;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
-  color: white;
-  margin-bottom: 10px;
 }
 
-.our-portfolio {
-  padding: 140px 0;
+.our-expertise .container .wrapper .content-center p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-expertise .container .wrapper .content-center p::first-letter {
+  text-transform: capitalize;
+}
+
+.our-expertise .row .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-expertise .row .container .col {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  background: white;
+}
+
+.our-expertise .row .container .col:hover .icon i {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.our-expertise .row .container .col .icon {
+  background-image: url("https://ninetheme.com/themes/forester/wp-content/uploads/2018/05/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-expertise .row .container .col .icon i {
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.our-expertise .row .container .col .wrapper {
+  margin-top: 20px;
+}
+
+.our-expertise .row .container .col .wrapper .content-center .title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.our-expertise .row .container .col .wrapper .content-center h5 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.our-expertise .row .container .col .wrapper .content-center h5:first-letter {
+  text-transform: capitalize;
+}
+
+.our-expertise .row .container .col .wrapper .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-expertise .row .container .col .wrapper .content-center h2 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-expertise .row .container .col .wrapper .content-center h3 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.our-expertise .row .container .col .wrapper .content-center p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-expertise .row .container .col .wrapper .content-center p::first-letter {
+  text-transform: capitalize;
+}
+
+.our-expertise .row .container .col .wrapper a {
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .our-portfolio .container {
   text-align: center;
+  padding-top: 140px;
+}
+
+.our-portfolio .container .wrapper .content-center .title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .our-portfolio .container .wrapper .content-center h5 {
   color: black;
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.our-portfolio .container .wrapper .content-center .discription {
-  color: black;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.8;
-  text-transform: lowercase;
 }
 
-.our-portfolio .container .wrapper .content-center .discription:first-letter {
+.our-portfolio .container .wrapper .content-center h5:first-letter {
   text-transform: capitalize;
 }
 
@@ -261,17 +401,32 @@ button:focus, input:focus {
 }
 
 .our-portfolio .container .wrapper .content-center h2 {
+  color: black;
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 900;
 }
 
 .our-portfolio .container .wrapper .content-center h3 {
+  color: black;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
-  color: white;
-  margin-bottom: 10px;
+}
+
+.our-portfolio .container .wrapper .content-center p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-portfolio .container .wrapper .content-center p::first-letter {
+  text-transform: capitalize;
+}
+
+.our-portfolio .filter-portfolio .container {
+  padding-top: 0;
 }
 
 .our-portfolio .filter-portfolio .container .filter-menu nav ul {
@@ -289,11 +444,11 @@ button:focus, input:focus {
 .our-portfolio .filter-portfolio .container .filter-menu nav ul li {
   cursor: pointer;
   text-transform: uppercase;
-  padding: 40px 10px;
+  padding: 40px 20px;
   font-size: 11px;
   font-weight: 700;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .our-portfolio .filter-portfolio .container .filter-menu nav ul li.active {
@@ -302,8 +457,8 @@ button:focus, input:focus {
 
 .our-portfolio .filter-portfolio .container .filter-menu nav ul li:hover {
   color: #a2a2a2;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .our-portfolio .filter-portfolio .list-images {
@@ -324,31 +479,37 @@ button:focus, input:focus {
   position: relative;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box a img {
+.our-portfolio .filter-portfolio .list-images .image-box img {
   max-width: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box:hover .caption .content-center {
+.our-portfolio .filter-portfolio .list-images .image-box:hover .overlay {
   visibility: visible;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
-  z-index: 2;
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  height: 100%;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption {
+.our-portfolio .filter-portfolio .list-images .image-box .overlay {
   text-align: center;
+  max-width: 100%;
   width: 100%;
+  height: 0%;
+  background: #363636;
   position: absolute;
   top: 0;
   left: 0;
   visibility: hidden;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center {
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -356,27 +517,25 @@ button:focus, input:focus {
           transform: translate(-50%, -50%);
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center h5 {
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center .title {
   color: white;
   text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center .discription {
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h5 {
   color: white;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.8;
-  text-transform: lowercase;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center .discription:first-letter {
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h5:first-letter {
   text-transform: capitalize;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center h1 {
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h1 {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -384,33 +543,766 @@ button:focus, input:focus {
   font-weight: 900;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center h2 {
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h2 {
+  color: white;
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 900;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center h3 {
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h3 {
+  color: white;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
-  color: white;
-  margin-bottom: 10px;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center i {
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center p::first-letter {
+  text-transform: capitalize;
+}
+
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center i {
   color: white;
   font-size: 10px;
 }
 
-.our-portfolio .filter-portfolio .list-images .image-box .caption .content-center::before {
+.our-portfolio .creative {
+  background: #f2f4ec;
+}
+
+.our-portfolio .creative .container {
+  padding: 80px 0;
+}
+
+.our-portfolio .creative .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: start;
+}
+
+.our-portfolio .creative .container .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 20px;
+}
+
+.our-portfolio .creative .container .row .col:last-child {
+  margin-right: 0;
+}
+
+.our-portfolio .creative .container .row .col .icon {
+  padding-right: 15px;
+}
+
+.our-portfolio .creative .container .row .col .icon i {
+  font-size: 80px;
+  font-weight: 200;
+}
+
+.our-portfolio .creative .container .row .col .content-center .title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.our-portfolio .creative .container .row .col .content-center h5 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.our-portfolio .creative .container .row .col .content-center h5:first-letter {
+  text-transform: capitalize;
+}
+
+.our-portfolio .creative .container .row .col .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-portfolio .creative .container .row .col .content-center h2 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-portfolio .creative .container .row .col .content-center h3 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.our-portfolio .creative .container .row .col .content-center p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-portfolio .creative .container .row .col .content-center p::first-letter {
+  text-transform: capitalize;
+}
+
+.our-team .container {
+  padding: 140px 0 0;
+  text-align: center;
+}
+
+.our-team .container .wrapper .content-center .title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.our-team .container .wrapper .content-center h5 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.our-team .container .wrapper .content-center h5:first-letter {
+  text-transform: capitalize;
+}
+
+.our-team .container .wrapper .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-team .container .wrapper .content-center h2 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-team .container .wrapper .content-center h3 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.our-team .container .wrapper .content-center p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-team .container .wrapper .content-center p::first-letter {
+  text-transform: capitalize;
+}
+
+.our-team .container .slide {
+  margin-top: 30px;
+}
+
+.our-team .container .slide .image-box {
+  margin-right: 20px;
+}
+
+.our-team .container .slide .image-box img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.our-team .container .slide .image-box:last-child {
+  margin-right: 0;
+}
+
+.our-description .services {
+  text-align: center;
+  background: #000;
+}
+
+.our-description .services .container {
+  padding: 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-description .services .container .col {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+}
+
+.our-description .services .container .col .content-center .title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.our-description .services .container .col .content-center h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.our-description .services .container .col .content-center h5:first-letter {
+  text-transform: capitalize;
+}
+
+.our-description .services .container .col .content-center h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-description .services .container .col .content-center h2 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-description .services .container .col .content-center h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.our-description .services .container .col .content-center p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-description .services .container .col .content-center p::first-letter {
+  text-transform: capitalize;
+}
+
+.our-description .service-body {
+  height: 400px;
+  background-image: url("https://ninetheme.com/themes/forester/wp-content/uploads/2017/07/bg-7.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.our-description .service-body .container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.our-description .service-body .container .wrapper .content-center .title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.our-description .service-body .container .wrapper .content-center h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.our-description .service-body .container .wrapper .content-center h5:first-letter {
+  text-transform: capitalize;
+}
+
+.our-description .service-body .container .wrapper .content-center h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-description .service-body .container .wrapper .content-center h2 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-description .service-body .container .wrapper .content-center h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.our-description .service-body .container .wrapper .content-center p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-description .service-body .container .wrapper .content-center p::first-letter {
+  text-transform: capitalize;
+}
+
+.our-description .service-body .container .slide-quotes .quotes {
+  width: 50%;
+  margin-left: 270px;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-body .title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-body h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-body h5:first-letter {
+  text-transform: capitalize;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-body h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-body h2 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-body h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-body p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-body p::first-letter {
+  text-transform: capitalize;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-bottom .title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h5:first-letter {
+  text-transform: capitalize;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h2 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-bottom p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.our-description .service-body .container .slide-quotes .quotes .quotes-bottom p::first-letter {
+  text-transform: capitalize;
+}
+
+.social {
+  background: #f2f4ec;
+}
+
+.social .container {
+  padding: 140px 0;
+  text-align: center;
+}
+
+.social .container .wrapper .content-center .title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.social .container .wrapper .content-center h5 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.social .container .wrapper .content-center h5:first-letter {
+  text-transform: capitalize;
+}
+
+.social .container .wrapper .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.social .container .wrapper .content-center h2 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.social .container .wrapper .content-center h3 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.social .container .wrapper .content-center p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.social .container .wrapper .content-center p::first-letter {
+  text-transform: capitalize;
+}
+
+.social .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social .container .row .icon i {
+  font-size: 70px;
+}
+
+.social .container .row .icon .title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.social .container .row .icon h5 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.social .container .row .icon h5:first-letter {
+  text-transform: capitalize;
+}
+
+.social .container .row .icon h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.social .container .row .icon h2 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.social .container .row .icon h3 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.social .container .row .icon p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.social .container .row .icon p::first-letter {
+  text-transform: capitalize;
+}
+
+.contact .container {
+  padding: 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .container .left {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+.contact .container .left .title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.contact .container .left h5 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contact .container .left h5:first-letter {
+  text-transform: capitalize;
+}
+
+.contact .container .left h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.contact .container .left h2 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.contact .container .left h3 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.contact .container .left p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.contact .container .left p::first-letter {
+  text-transform: capitalize;
+}
+
+.contact .container .left .method-contact .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact .container .left .method-contact .col .icon {
+  text-align: center;
+  margin-right: 30px;
+}
+
+.contact .container .left .method-contact .col .icon i {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.contact .container .left .method-contact .col .wrapper {
+  position: relative;
+}
+
+.contact .container .left .method-contact .col .wrapper::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-left: 1px solid rgba(204, 204, 204, 0.26);
+  position: absolute;
+  left: 0;
+  -webkit-transform: translate(-20%, 10%);
+          transform: translate(-20%, 10%);
+}
+
+.contact .container .right {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.contact .container .right input,
+.contact .container .right textarea {
+  margin: 10px 0;
+  width: 100%;
+  height: 45px;
+  background: rgba(223, 216, 216, 0.26);
+}
+
+.contact .container .right input::-webkit-input-placeholder,
+.contact .container .right textarea::-webkit-input-placeholder {
+  padding: 15px;
+  text-transform: capitalize;
+}
+
+.contact .container .right input:-ms-input-placeholder,
+.contact .container .right textarea:-ms-input-placeholder {
+  padding: 15px;
+  text-transform: capitalize;
+}
+
+.contact .container .right input::-ms-input-placeholder,
+.contact .container .right textarea::-ms-input-placeholder {
+  padding: 15px;
+  text-transform: capitalize;
+}
+
+.contact .container .right input::placeholder,
+.contact .container .right textarea::placeholder {
+  padding: 15px;
+  text-transform: capitalize;
+}
+
+.contact .container .right textarea {
+  height: 100px;
+}
+
+.contact .container .right button {
+  width: 180px;
+  height: 45px;
+  border: 1px solid rgba(204, 204, 204, 0.185);
+  border-radius: 50px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.contact .container .right button:hover {
+  border: transparent;
+  background: rgba(226, 222, 222, 0.26);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.contact .map iframe {
+  width: 100%;
+}
+
+.contact .client .container {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .client .container .icon {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.contact .client .container .icon:hover {
+  position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.contact .client .container .icon:hover::before {
   content: "";
   width: 100%;
-  height: auto;
-  background: #363636;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.575);
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.contact .client .container .icon img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 header {
@@ -536,23 +1428,21 @@ header .bottom-header .container {
   padding: 140px 0;
 }
 
-header .bottom-header .container .wrapper .content-center h5 {
+header .bottom-header .container .wrapper .content-center .title {
   color: white;
   text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
-header .bottom-header .container .wrapper .content-center .discription {
+header .bottom-header .container .wrapper .content-center h5 {
   color: white;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.8;
-  text-transform: lowercase;
 }
 
-header .bottom-header .container .wrapper .content-center .discription:first-letter {
+header .bottom-header .container .wrapper .content-center h5:first-letter {
   text-transform: capitalize;
 }
 
@@ -565,17 +1455,28 @@ header .bottom-header .container .wrapper .content-center h1 {
 }
 
 header .bottom-header .container .wrapper .content-center h2 {
+  color: white;
   text-transform: capitalize;
   font-size: 40px;
   font-weight: 900;
 }
 
 header .bottom-header .container .wrapper .content-center h3 {
+  color: white;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
+}
+
+header .bottom-header .container .wrapper .content-center p {
   color: white;
-  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+header .bottom-header .container .wrapper .content-center p::first-letter {
+  text-transform: capitalize;
 }
 
 header .bottom-header .container .wrapper .button {
