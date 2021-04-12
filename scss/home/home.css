@@ -100,8 +100,8 @@ textarea:focus {
 .our-story .container .wrapper .content-center h2 {
   color: black;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-story .container .wrapper .content-center h3 {
@@ -150,11 +150,12 @@ textarea:focus {
 
 .our-expertise {
   background: #f2f4ec;
+  padding: 140px 0;
 }
 
 .our-expertise .container {
-  padding: 140px 0;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .our-expertise .container .wrapper .content-center .title {
@@ -186,8 +187,8 @@ textarea:focus {
 .our-expertise .container .wrapper .content-center h2 {
   color: black;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-expertise .container .wrapper .content-center h3 {
@@ -208,6 +209,10 @@ textarea:focus {
   text-transform: capitalize;
 }
 
+.our-expertise .row {
+  margin-bottom: 60px;
+}
+
 .our-expertise .row .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,10 +229,10 @@ textarea:focus {
 }
 
 .our-expertise .row .container .col:hover .icon i {
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .our-expertise .row .container .col .icon {
@@ -249,11 +254,11 @@ textarea:focus {
 }
 
 .our-expertise .row .container .col .icon i {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 45px;
+  font-weight: 400;
   color: white;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .our-expertise .row .container .col .wrapper {
@@ -289,8 +294,8 @@ textarea:focus {
 .our-expertise .row .container .col .wrapper .content-center h2 {
   color: black;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-expertise .row .container .col .wrapper .content-center h3 {
@@ -317,6 +322,39 @@ textarea:focus {
   color: black;
   text-transform: uppercase;
   padding: 10px;
+}
+
+.our-expertise .bottom .container {
+  text-align: center;
+}
+
+.our-expertise .bottom .container p {
+  width: 40%;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  -webkit-transform: translateX(75%);
+          transform: translateX(75%);
+}
+
+.our-expertise .bottom .container a {
+  margin-top: 20px;
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.our-expertise .bottom .container a:hover {
+  color: white;
+  background: #000;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .our-portfolio .container {
@@ -353,8 +391,8 @@ textarea:focus {
 .our-portfolio .container .wrapper .content-center h2 {
   color: black;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-portfolio .container .wrapper .content-center h3 {
@@ -496,8 +534,8 @@ textarea:focus {
 .our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h2 {
   color: white;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h3 {
@@ -590,8 +628,8 @@ textarea:focus {
 .our-portfolio .creative .container .row .col .content-center h2 {
   color: black;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-portfolio .creative .container .row .col .content-center h3 {
@@ -646,8 +684,8 @@ textarea:focus {
 .our-team .container .wrapper .content-center h2 {
   color: black;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-team .container .wrapper .content-center h3 {
@@ -734,8 +772,8 @@ textarea:focus {
 .our-description .services .container .col .content-center h2 {
   color: white;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-description .services .container .col .content-center h3 {
@@ -802,8 +840,8 @@ textarea:focus {
 .our-description .service-body .container .wrapper .content-center h2 {
   color: white;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-description .service-body .container .wrapper .content-center h3 {
@@ -858,8 +896,8 @@ textarea:focus {
 .our-description .service-body .container .slide-quotes .quotes .quotes-body h2 {
   color: white;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-description .service-body .container .slide-quotes .quotes .quotes-body h3 {
@@ -909,8 +947,8 @@ textarea:focus {
 .our-description .service-body .container .slide-quotes .quotes .quotes-bottom h2 {
   color: white;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .our-description .service-body .container .slide-quotes .quotes .quotes-bottom h3 {
@@ -969,8 +1007,8 @@ textarea:focus {
 .social .container .wrapper .content-center h2 {
   color: black;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .social .container .wrapper .content-center h3 {
@@ -992,6 +1030,7 @@ textarea:focus {
 }
 
 .social .container .row {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,8 +1075,8 @@ textarea:focus {
 .social .container .row .icon h2 {
   color: black;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .social .container .row .icon h3 {
@@ -1099,8 +1138,8 @@ textarea:focus {
 .contact .container .left h2 {
   color: black;
   text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .contact .container .left h3 {

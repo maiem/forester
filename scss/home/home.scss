@@ -50,10 +50,11 @@
 
 .our-expertise {
   background: rgb(242, 244, 236);
+  padding: 140px 0;
 
   .container {
-    padding: 140px 0;
     text-align: center;
+    margin-bottom: 30px;
 
     .wrapper {
       .content-center {
@@ -63,6 +64,7 @@
   }
 
   .row{
+    margin-bottom: 60px;
     .container{
       display: flex;
       justify-content: space-between;
@@ -74,8 +76,8 @@
         &:hover{
           .icon{
             i{
-              transform: translateY(-15px);
-              transition: all .3s ease-in;
+              transform: translateY(-10px);
+              transition: all .2s ease-in;
             }
           }
         }
@@ -93,10 +95,10 @@
           align-items: center;
 
           i{
-            font-size: 50px;
-            font-weight: 500;
+            font-size: 45px;
+            font-weight: 400;
             color: $primaryColor;
-            transition: all .3s ease-in;
+            transition: all .2s ease-in;
           }
         }
 
@@ -114,6 +116,40 @@
             text-transform: uppercase;
             padding: 10px;
           }
+        }
+      }
+    }
+  }
+
+  .bottom{
+    .container{
+      text-align: center;
+
+      p{
+        width: 40%;
+        font-size: 12px;
+        font-weight: 600;
+        color: $secondaryColor;
+        transform: translateX(75%);
+      }
+
+      a{
+        margin-top: 20px;
+        padding: 10px 40px;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        color: $secondaryColor;
+
+        transition: all .3s ease-in;
+
+        &:hover{
+          color: $primaryColor;
+          background: #000;
+          transition: all .3s ease-in;
         }
       }
     }
@@ -364,6 +400,8 @@
     }
 
     .row {
+      margin-top: 30px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
