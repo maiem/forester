@@ -125,14 +125,14 @@ textarea:focus {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-story .container .wrapper .content-center h5 {
   color: black;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-story .container .wrapper .content-center h5:first-letter {
@@ -161,11 +161,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-story .container .wrapper .content-center h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-story .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-story .container .wrapper .content-center p::first-letter {
@@ -200,24 +207,26 @@ textarea:focus {
 
 .our-expertise {
   background: #f2f4ec;
+  padding: 140px 0;
 }
 
 .our-expertise .container {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .our-expertise .container .wrapper .content-center .title {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-expertise .container .wrapper .content-center h5 {
   color: black;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-expertise .container .wrapper .content-center h5:first-letter {
@@ -246,15 +255,26 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-expertise .container .wrapper .content-center h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-expertise .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-expertise .container .wrapper .content-center p::first-letter {
   text-transform: capitalize;
+}
+
+.our-expertise .row {
+  margin-bottom: 60px;
 }
 
 .our-expertise .row .container {
@@ -313,14 +333,14 @@ textarea:focus {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-expertise .row .container .col .wrapper .content-center h5 {
   color: black;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-expertise .row .container .col .wrapper .content-center h5:first-letter {
@@ -349,11 +369,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-expertise .row .container .col .wrapper .content-center h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-expertise .row .container .col .wrapper .content-center p {
   color: black;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-expertise .row .container .col .wrapper .content-center p::first-letter {
@@ -373,9 +400,12 @@ textarea:focus {
 }
 
 .our-expertise .bottom .container p {
+  width: 40%;
   font-size: 12px;
   font-weight: 600;
   color: black;
+  -webkit-transform: translateX(75%);
+          transform: translateX(75%);
 }
 
 .our-expertise .bottom .container a {
@@ -385,7 +415,7 @@ textarea:focus {
   border-radius: 50px;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: black;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
@@ -407,14 +437,14 @@ textarea:focus {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-portfolio .container .wrapper .content-center h5 {
   color: black;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-portfolio .container .wrapper .content-center h5:first-letter {
@@ -443,11 +473,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-portfolio .container .wrapper .content-center h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-portfolio .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-portfolio .container .wrapper .content-center p::first-letter {
@@ -550,14 +587,14 @@ textarea:focus {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h5 {
   color: white;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h5:first-letter {
@@ -586,11 +623,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center h4 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center p {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center p::first-letter {
@@ -644,14 +688,14 @@ textarea:focus {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-portfolio .creative .container .row .col .content-center h5 {
   color: black;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-portfolio .creative .container .row .col .content-center h5:first-letter {
@@ -680,11 +724,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-portfolio .creative .container .row .col .content-center h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-portfolio .creative .container .row .col .content-center p {
   color: black;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-portfolio .creative .container .row .col .content-center p::first-letter {
@@ -700,14 +751,14 @@ textarea:focus {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-team .container .wrapper .content-center h5 {
   color: black;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-team .container .wrapper .content-center h5:first-letter {
@@ -736,22 +787,26 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-team .container .wrapper .content-center h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-team .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-team .container .wrapper .content-center p::first-letter {
   text-transform: capitalize;
 }
 
-.our-team .container .slide {
-  margin-top: 30px;
-}
-
 .our-team .container .slide .image-box {
+  margin: 20px;
   margin-right: 20px;
 }
 
@@ -762,6 +817,64 @@ textarea:focus {
 
 .our-team .container .slide .image-box:last-child {
   margin-right: 0;
+}
+
+.our-team .container .slide .image-box .info .content-center .title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.our-team .container .slide .image-box .info .content-center h5 {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.our-team .container .slide .image-box .info .content-center h5:first-letter {
+  text-transform: capitalize;
+}
+
+.our-team .container .slide .image-box .info .content-center h1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 130px;
+  font-weight: 900;
+}
+
+.our-team .container .slide .image-box .info .content-center h2 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.our-team .container .slide .image-box .info .content-center h3 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.our-team .container .slide .image-box .info .content-center h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.our-team .container .slide .image-box .info .content-center p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.our-team .container .slide .image-box .info .content-center p::first-letter {
+  text-transform: capitalize;
 }
 
 .our-description .services {
@@ -788,14 +901,14 @@ textarea:focus {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-description .services .container .col .content-center h5 {
   color: white;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-description .services .container .col .content-center h5:first-letter {
@@ -824,11 +937,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-description .services .container .col .content-center h4 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-description .services .container .col .content-center p {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-description .services .container .col .content-center p::first-letter {
@@ -839,11 +959,21 @@ textarea:focus {
   height: 400px;
   background-image: url("https://ninetheme.com/themes/forester/wp-content/uploads/2017/07/bg-7.jpg");
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.301);
   position: relative;
 }
 
+.our-description .service-body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.377);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .our-description .service-body .container {
+  padding: 140px 0;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -856,14 +986,14 @@ textarea:focus {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-description .service-body .container .wrapper .content-center h5 {
   color: white;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-description .service-body .container .wrapper .content-center h5:first-letter {
@@ -892,34 +1022,36 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-description .service-body .container .wrapper .content-center h4 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-description .service-body .container .wrapper .content-center p {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-description .service-body .container .wrapper .content-center p::first-letter {
   text-transform: capitalize;
 }
 
-.our-description .service-body .container .slide-quotes .quotes {
-  width: 50%;
-  margin-left: 270px;
-}
-
 .our-description .service-body .container .slide-quotes .quotes .quotes-body .title {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-description .service-body .container .slide-quotes .quotes .quotes-body h5 {
   color: white;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-description .service-body .container .slide-quotes .quotes .quotes-body h5:first-letter {
@@ -948,11 +1080,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-description .service-body .container .slide-quotes .quotes .quotes-body h4 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-description .service-body .container .slide-quotes .quotes .quotes-body p {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-description .service-body .container .slide-quotes .quotes .quotes-body p::first-letter {
@@ -963,14 +1102,14 @@ textarea:focus {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .our-description .service-body .container .slide-quotes .quotes .quotes-bottom h5 {
   color: white;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .our-description .service-body .container .slide-quotes .quotes .quotes-bottom h5:first-letter {
@@ -999,11 +1138,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h4 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .our-description .service-body .container .slide-quotes .quotes .quotes-bottom p {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .our-description .service-body .container .slide-quotes .quotes .quotes-bottom p::first-letter {
@@ -1023,14 +1169,14 @@ textarea:focus {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .social .container .wrapper .content-center h5 {
   color: black;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .social .container .wrapper .content-center h5:first-letter {
@@ -1059,11 +1205,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.social .container .wrapper .content-center h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .social .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .social .container .wrapper .content-center p::first-letter {
@@ -1071,7 +1224,7 @@ textarea:focus {
 }
 
 .social .container .row {
-  margin-top: 30px;
+  margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1085,20 +1238,21 @@ textarea:focus {
 
 .social .container .row .icon i {
   font-size: 70px;
+  margin-bottom: 15px;
 }
 
 .social .container .row .icon .title {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .social .container .row .icon h5 {
   color: black;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .social .container .row .icon h5:first-letter {
@@ -1127,11 +1281,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.social .container .row .icon h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .social .container .row .icon p {
   color: black;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .social .container .row .icon p::first-letter {
@@ -1154,14 +1315,14 @@ textarea:focus {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .contact .container .left h5 {
   color: black;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .contact .container .left h5:first-letter {
@@ -1190,11 +1351,18 @@ textarea:focus {
   font-weight: 600;
 }
 
+.contact .container .left h4 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .contact .container .left p {
   color: black;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding-top: 10px;
 }
 
 .contact .container .left p::first-letter {
@@ -1376,6 +1544,10 @@ footer .container .left .sub-menu nav ul li a {
 
 footer .container .left .sub-menu nav ul li a:last-child {
   padding-right: 0;
+}
+
+footer .container .left .sub-menu nav ul li a:hover {
+  color: #928d8d;
 }
 
 footer .container .left .sub-contact {

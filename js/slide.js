@@ -2,6 +2,12 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
       loop: true,
       dots:true,
-      items: 1,
+
     });
-  });
+
+    // $(".owl-carousel slide1").owlCarousel({
+    //   loop: true,
+    //   dots:true,
+    //   item: 1,
+    // });
+});
