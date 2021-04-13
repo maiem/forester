@@ -36,13 +36,13 @@ textarea:focus {
 }
 
 *::-moz-selection {
-  background: pink;
+  background: gray;
   color: white;
   box-sizing: border-box;
 }
 
 *::selection {
-  background: pink;
+  background: gray;
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
