@@ -1,6 +1,6 @@
-@import 'reset';
-@import 'home';
-@import 'mixin';
+@import "reset";
+@import "home";
+@import "mixin";
 
 header {
   height: 650px;
@@ -41,12 +41,19 @@ header {
                 text-transform: uppercase;
                 color: $primaryColor;
                 font-size: 10px;
-                font-weight: 500;
+                font-weight: 600;
                 letter-spacing: 1px;
-                padding: 10px;
+                padding: 15px;
+
+                transition: all 0.2s ease-in;
 
                 &:last-child {
                   padding-right: 0;
+                }
+
+                &:hover {
+                  color: #ccc;
+                  transition: all 0.2s ease-in;
                 }
               }
             }
@@ -72,17 +79,22 @@ header {
 
             li {
               a {
-                padding: 10px;
+                padding: 15px;
+                transition: all 0.2s ease-in;
 
                 &:last-child {
                   padding-right: 0;
                 }
 
-                transition: all 0.2s ease-in;
-
                 &:hover {
-                  color: rgba(143, 138, 138, 0.562);
-                  transition: all 0.2s ease-in;
+                  i{
+                    color: #ccc;
+                    transition: all 0.2s ease-in;
+                  }
+                  span{
+                    color: #ccc;
+                    transition: all 0.2s ease-in;
+                  }
                 }
 
                 i {
@@ -99,24 +111,25 @@ header {
 
                   color: $primaryColor;
                   font-size: 10px;
-                  font-weight: 500;
+                  font-weight: 600;
                   letter-spacing: 1px;
                   text-transform: uppercase;
+
                   position: relative;
 
-                  //   &::before{
-                  //       content: "";
-                  //       width: 12px;
-                  //       height: 12px;
-                  //       color: $primaryColor;
-                  //       border-right: 1px solid $primaryColor;
+                  &::before {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
 
-                  //       position: absolute;
-                  //       top: 0;
-                  //       left: 0;
+                    border-right: 1px solid #ccc;
 
-                  //       transform: translateY(50%);
-                  //   }
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    transform: translate(-15px,10%);
+                  }
                 }
               }
             }
@@ -131,7 +144,7 @@ header {
 
     .container {
       padding: 140px 0;
-      
+
       .wrapper {
         .content-center {
           @include content-center(true);
