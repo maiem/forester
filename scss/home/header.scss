@@ -3,7 +3,7 @@
 @import "mixin";
 
 header {
-  height: 650px;
+  height: 100vh;
 
   background-image: url("https://ninetheme.com/themes/forester/wp-content/uploads/2018/05/bg-1.jpg");
   background-size: cover;
@@ -63,7 +63,7 @@ header {
 
       .logo {
         a {
-          padding: 5px;
+          padding: 15px;
           img {
             object-fit: cover;
           }

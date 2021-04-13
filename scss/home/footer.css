@@ -36,13 +36,13 @@ textarea:focus {
 }
 
 *::-moz-selection {
-  background: pink;
+  background: gray;
   color: white;
   box-sizing: border-box;
 }
 
 *::selection {
-  background: pink;
+  background: gray;
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -86,13 +86,13 @@ textarea:focus {
 }
 
 *::-moz-selection {
-  background: pink;
+  background: gray;
   color: white;
   box-sizing: border-box;
 }
 
 *::selection {
-  background: pink;
+  background: gray;
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -171,7 +171,7 @@ textarea:focus {
 .our-story .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -265,7 +265,7 @@ textarea:focus {
 .our-expertise .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -329,6 +329,10 @@ textarea:focus {
   margin-top: 20px;
 }
 
+.our-expertise .row .container .col .wrapper .content-center {
+  padding: 20px;
+}
+
 .our-expertise .row .container .col .wrapper .content-center .title {
   color: black;
   text-transform: uppercase;
@@ -379,7 +383,7 @@ textarea:focus {
 .our-expertise .row .container .col .wrapper .content-center p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -402,7 +406,7 @@ textarea:focus {
 .our-expertise .bottom .container p {
   width: 40%;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 300;
   color: black;
   -webkit-transform: translateX(75%);
           transform: translateX(75%);
@@ -483,7 +487,7 @@ textarea:focus {
 .our-portfolio .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -539,17 +543,16 @@ textarea:focus {
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  margin-bottom: 15px;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box img {
   max-width: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box:hover .overlay {
@@ -557,7 +560,7 @@ textarea:focus {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  height: 100%;
+  height: 448px;
 }
 
 .our-portfolio .filter-portfolio .list-images .image-box .overlay {
@@ -633,7 +636,7 @@ textarea:focus {
 .our-portfolio .filter-portfolio .list-images .image-box .overlay .content-center p {
   color: white;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -734,7 +737,7 @@ textarea:focus {
 .our-portfolio .creative .container .row .col .content-center p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -797,7 +800,7 @@ textarea:focus {
 .our-team .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -805,21 +808,62 @@ textarea:focus {
   text-transform: capitalize;
 }
 
-.our-team .container .slide .image-box {
+.our-team .container #slide-team .image-box {
   margin: 20px;
+  overflow: hidden;
+  position: relative;
   margin-right: 20px;
 }
 
-.our-team .container .slide .image-box img {
-  max-width: 100%;
-  width: 100%;
+.our-team .container #slide-team .image-box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
 }
 
-.our-team .container .slide .image-box:last-child {
+.our-team .container #slide-team .image-box:hover .info {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.our-team .container #slide-team .image-box img {
+  max-width: 100%;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.our-team .container #slide-team .image-box:last-child {
   margin-right: 0;
 }
 
-.our-team .container .slide .image-box .info .content-center .title {
+.our-team .container #slide-team .image-box .info {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  padding: 60px 0;
+  background: white;
+  width: 90%;
+  position: absolute;
+  top: 5%;
+  left: -5%;
+}
+
+.our-team .container #slide-team .image-box .info .content-center {
+  width: 80%;
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+}
+
+.our-team .container #slide-team .image-box .info .content-center .title {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
@@ -827,17 +871,17 @@ textarea:focus {
   letter-spacing: 2px;
 }
 
-.our-team .container .slide .image-box .info .content-center h5 {
+.our-team .container #slide-team .image-box .info .content-center h5 {
   color: black;
   font-size: 18px;
   font-weight: 500;
 }
 
-.our-team .container .slide .image-box .info .content-center h5:first-letter {
+.our-team .container #slide-team .image-box .info .content-center h5:first-letter {
   text-transform: capitalize;
 }
 
-.our-team .container .slide .image-box .info .content-center h1 {
+.our-team .container #slide-team .image-box .info .content-center h1 {
   color: black;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -845,36 +889,49 @@ textarea:focus {
   font-weight: 900;
 }
 
-.our-team .container .slide .image-box .info .content-center h2 {
+.our-team .container #slide-team .image-box .info .content-center h2 {
   color: black;
   text-transform: capitalize;
   font-size: 45px;
   font-weight: 700;
 }
 
-.our-team .container .slide .image-box .info .content-center h3 {
+.our-team .container #slide-team .image-box .info .content-center h3 {
   color: black;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
 }
 
-.our-team .container .slide .image-box .info .content-center h4 {
+.our-team .container #slide-team .image-box .info .content-center h4 {
   color: black;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 600;
 }
 
-.our-team .container .slide .image-box .info .content-center p {
+.our-team .container #slide-team .image-box .info .content-center p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
-.our-team .container .slide .image-box .info .content-center p::first-letter {
+.our-team .container #slide-team .image-box .info .content-center p::first-letter {
   text-transform: capitalize;
+}
+
+.our-team .container #slide-team .image-box .info .icon {
+  margin-top: 40px;
+}
+
+.our-team .container #slide-team .image-box .info .icon i {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.our-team .container #slide-team .image-box .info .icon i:hover {
+  color: rgba(204, 204, 204, 0.678);
 }
 
 .our-description .services {
@@ -947,7 +1004,7 @@ textarea:focus {
 .our-description .services .container .col .content-center p {
   color: white;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -966,7 +1023,7 @@ textarea:focus {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.377);
+  background-color: rgba(0, 0, 0, 0.466);
   position: absolute;
   top: 0;
   left: 0;
@@ -1032,7 +1089,7 @@ textarea:focus {
 .our-description .service-body .container .wrapper .content-center p {
   color: white;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -1040,7 +1097,7 @@ textarea:focus {
   text-transform: capitalize;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-body .title {
+.our-description .service-body .container #slide-quotes .quotes .quotes-body .title {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
@@ -1048,17 +1105,17 @@ textarea:focus {
   letter-spacing: 2px;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-body h5 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-body h5 {
   color: white;
   font-size: 18px;
   font-weight: 500;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-body h5:first-letter {
+.our-description .service-body .container #slide-quotes .quotes .quotes-body h5:first-letter {
   text-transform: capitalize;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-body h1 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-body h1 {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1066,39 +1123,39 @@ textarea:focus {
   font-weight: 900;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-body h2 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-body h2 {
   color: white;
   text-transform: capitalize;
   font-size: 45px;
   font-weight: 700;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-body h3 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-body h3 {
   color: white;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-body h4 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-body h4 {
   color: white;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 600;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-body p {
+.our-description .service-body .container #slide-quotes .quotes .quotes-body p {
   color: white;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-body p::first-letter {
+.our-description .service-body .container #slide-quotes .quotes .quotes-body p::first-letter {
   text-transform: capitalize;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-bottom .title {
+.our-description .service-body .container #slide-quotes .quotes .quotes-bottom .title {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
@@ -1106,17 +1163,17 @@ textarea:focus {
   letter-spacing: 2px;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h5 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-bottom h5 {
   color: white;
   font-size: 18px;
   font-weight: 500;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h5:first-letter {
+.our-description .service-body .container #slide-quotes .quotes .quotes-bottom h5:first-letter {
   text-transform: capitalize;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h1 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-bottom h1 {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1124,35 +1181,35 @@ textarea:focus {
   font-weight: 900;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h2 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-bottom h2 {
   color: white;
   text-transform: capitalize;
   font-size: 45px;
   font-weight: 700;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h3 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-bottom h3 {
   color: white;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-bottom h4 {
+.our-description .service-body .container #slide-quotes .quotes .quotes-bottom h4 {
   color: white;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 600;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-bottom p {
+.our-description .service-body .container #slide-quotes .quotes .quotes-bottom p {
   color: white;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
-.our-description .service-body .container .slide-quotes .quotes .quotes-bottom p::first-letter {
+.our-description .service-body .container #slide-quotes .quotes .quotes-bottom p::first-letter {
   text-transform: capitalize;
 }
 
@@ -1215,7 +1272,7 @@ textarea:focus {
 .social .container .wrapper .content-center p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -1291,7 +1348,7 @@ textarea:focus {
 .social .container .row .icon p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -1361,7 +1418,7 @@ textarea:focus {
 .contact .container .left p {
   color: black;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -1476,18 +1533,18 @@ textarea:focus {
           align-items: center;
 }
 
-.contact .client .container .icon {
+.contact .client .container #slide-client .icon {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-.contact .client .container .icon:hover {
+.contact .client .container #slide-client .icon:hover {
   position: relative;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-.contact .client .container .icon:hover::before {
+.contact .client .container #slide-client .icon:hover::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -1497,7 +1554,7 @@ textarea:focus {
   left: 0;
 }
 
-.contact .client .container .icon img {
+.contact .client .container #slide-client .icon img {
   max-width: 100%;
   width: 100%;
   height: 100%;
