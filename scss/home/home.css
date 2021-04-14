@@ -758,21 +758,21 @@ textarea:focus {
   text-transform: capitalize;
 }
 
-.our-team .container #team .image-box {
+.our-team .container #slide1 .image-box {
   margin: 20px;
   overflow: hidden;
   position: relative;
   margin-right: 20px;
 }
 
-.our-team .container #team .image-box:hover img {
+.our-team .container #slide1 .image-box:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
 
-.our-team .container #team .image-box:hover .info {
+.our-team .container #slide1 .image-box:hover .info {
   position: absolute;
   top: 5%;
   left: 5%;
@@ -782,7 +782,7 @@ textarea:focus {
   transition: all .4s ease-in-out;
 }
 
-.our-team .container #team .image-box img {
+.our-team .container #slide1 .image-box img {
   max-width: 100%;
   width: 100%;
   vertical-align: middle;
@@ -790,11 +790,11 @@ textarea:focus {
   transition: all .6s ease-in-out;
 }
 
-.our-team .container #team .image-box:last-child {
+.our-team .container #slide1 .image-box:last-child {
   margin-right: 0;
 }
 
-.our-team .container #team .image-box .info {
+.our-team .container #slide1 .image-box .info {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all .4s ease-in-out;
@@ -807,13 +807,13 @@ textarea:focus {
   left: -5%;
 }
 
-.our-team .container #team .image-box .info .content-center {
+.our-team .container #slide1 .image-box .info .content-center {
   width: 80%;
   -webkit-transform: translateX(25px);
           transform: translateX(25px);
 }
 
-.our-team .container #team .image-box .info .content-center .title {
+.our-team .container #slide1 .image-box .info .content-center .title {
   color: black;
   text-transform: uppercase;
   font-size: 10px;
@@ -821,17 +821,17 @@ textarea:focus {
   letter-spacing: 2px;
 }
 
-.our-team .container #team .image-box .info .content-center h5 {
+.our-team .container #slide1 .image-box .info .content-center h5 {
   color: black;
   font-size: 18px;
   font-weight: 500;
 }
 
-.our-team .container #team .image-box .info .content-center h5:first-letter {
+.our-team .container #slide1 .image-box .info .content-center h5:first-letter {
   text-transform: capitalize;
 }
 
-.our-team .container #team .image-box .info .content-center h1 {
+.our-team .container #slide1 .image-box .info .content-center h1 {
   color: black;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -839,48 +839,48 @@ textarea:focus {
   font-weight: 900;
 }
 
-.our-team .container #team .image-box .info .content-center h2 {
+.our-team .container #slide1 .image-box .info .content-center h2 {
   color: black;
   text-transform: capitalize;
   font-size: 45px;
   font-weight: 700;
 }
 
-.our-team .container #team .image-box .info .content-center h3 {
+.our-team .container #slide1 .image-box .info .content-center h3 {
   color: black;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
 }
 
-.our-team .container #team .image-box .info .content-center h4 {
+.our-team .container #slide1 .image-box .info .content-center h4 {
   color: black;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 600;
 }
 
-.our-team .container #team .image-box .info .content-center p {
+.our-team .container #slide1 .image-box .info .content-center p {
   color: black;
   font-size: 14px;
   font-weight: 400;
   padding-top: 10px;
 }
 
-.our-team .container #team .image-box .info .content-center p::first-letter {
+.our-team .container #slide1 .image-box .info .content-center p::first-letter {
   text-transform: capitalize;
 }
 
-.our-team .container #team .image-box .info .icon {
+.our-team .container #slide1 .image-box .info .icon {
   margin-top: 40px;
 }
 
-.our-team .container #team .image-box .info .icon i {
+.our-team .container #slide1 .image-box .info .icon i {
   font-size: 12px;
   cursor: pointer;
 }
 
-.our-team .container #team .image-box .info .icon i:hover {
+.our-team .container #slide1 .image-box .info .icon i:hover {
   color: rgba(204, 204, 204, 0.678);
 }
 
@@ -1047,7 +1047,7 @@ textarea:focus {
   text-transform: capitalize;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-body .title {
+.our-description .service-body .container #slide2 .quotes .quotes-body .title {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
@@ -1055,17 +1055,17 @@ textarea:focus {
   letter-spacing: 2px;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-body h5 {
+.our-description .service-body .container #slide2 .quotes .quotes-body h5 {
   color: white;
   font-size: 18px;
   font-weight: 500;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-body h5:first-letter {
+.our-description .service-body .container #slide2 .quotes .quotes-body h5:first-letter {
   text-transform: capitalize;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-body h1 {
+.our-description .service-body .container #slide2 .quotes .quotes-body h1 {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1073,39 +1073,39 @@ textarea:focus {
   font-weight: 900;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-body h2 {
+.our-description .service-body .container #slide2 .quotes .quotes-body h2 {
   color: white;
   text-transform: capitalize;
   font-size: 45px;
   font-weight: 700;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-body h3 {
+.our-description .service-body .container #slide2 .quotes .quotes-body h3 {
   color: white;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-body h4 {
+.our-description .service-body .container #slide2 .quotes .quotes-body h4 {
   color: white;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 600;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-body p {
+.our-description .service-body .container #slide2 .quotes .quotes-body p {
   color: white;
   font-size: 14px;
   font-weight: 400;
   padding-top: 10px;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-body p::first-letter {
+.our-description .service-body .container #slide2 .quotes .quotes-body p::first-letter {
   text-transform: capitalize;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-bottom .title {
+.our-description .service-body .container #slide2 .quotes .quotes-bottom .title {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
@@ -1113,17 +1113,17 @@ textarea:focus {
   letter-spacing: 2px;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-bottom h5 {
+.our-description .service-body .container #slide2 .quotes .quotes-bottom h5 {
   color: white;
   font-size: 18px;
   font-weight: 500;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-bottom h5:first-letter {
+.our-description .service-body .container #slide2 .quotes .quotes-bottom h5:first-letter {
   text-transform: capitalize;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-bottom h1 {
+.our-description .service-body .container #slide2 .quotes .quotes-bottom h1 {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1131,35 +1131,35 @@ textarea:focus {
   font-weight: 900;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-bottom h2 {
+.our-description .service-body .container #slide2 .quotes .quotes-bottom h2 {
   color: white;
   text-transform: capitalize;
   font-size: 45px;
   font-weight: 700;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-bottom h3 {
+.our-description .service-body .container #slide2 .quotes .quotes-bottom h3 {
   color: white;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 600;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-bottom h4 {
+.our-description .service-body .container #slide2 .quotes .quotes-bottom h4 {
   color: white;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 600;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-bottom p {
+.our-description .service-body .container #slide2 .quotes .quotes-bottom p {
   color: white;
   font-size: 14px;
   font-weight: 400;
   padding-top: 10px;
 }
 
-.our-description .service-body .container #quotes .quotes .quotes-bottom p::first-letter {
+.our-description .service-body .container #slide2 .quotes .quotes-bottom p::first-letter {
   text-transform: capitalize;
 }
 
@@ -1484,18 +1484,18 @@ textarea:focus {
           align-items: center;
 }
 
-.contact .client .container #client .icon {
+.contact .client .container #slide3 .icon {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-.contact .client .container #client .icon:hover {
+.contact .client .container #slide3 .icon:hover {
   position: relative;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-.contact .client .container #client .icon:hover::before {
+.contact .client .container #slide3 .icon:hover::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -1505,10 +1505,10 @@ textarea:focus {
   left: 0;
 }
 
-.contact .client .container #client .icon img {
+.contact .client .container #slide3 .icon img {
   max-width: 100%;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   cursor: pointer;
 }
 

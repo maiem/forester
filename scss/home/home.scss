@@ -309,7 +309,7 @@
       }
     }
 
-    #team {
+    #slide1 {
       .image-box {
         margin: 20px;
         overflow: hidden;
@@ -436,7 +436,7 @@
         }
       }
 
-      #quotes {
+      #slide2 {
         .quotes {
           .quotes-body {
             @include content-center(true);
@@ -579,7 +579,7 @@
       justify-content: space-between;
       align-items: center;
 
-     #client{
+     #slide3{
       .icon {
         transition: all 0.2s ease-in;
 
@@ -601,8 +601,8 @@
 
         img {
           max-width: 100%;
-          width: 100%;
-          height: 100%;
+          width: 50%;
+          height: 50%;
           cursor: pointer;
         }
       }

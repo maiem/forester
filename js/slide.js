@@ -1,20 +1,23 @@
 $(document).ready(function () {
   
-  $("#team").owlCarousel({
+  $("#slide1").owlCarousel({
     loop: true,
     dots: true,
     item: 3,
   });
 
-  $("#quotes").owlCarousel({
+  $("#slide2").owlCarousel({
     loop: true,
+    autoTimout:true,
     dots: true,
-    singleItem:true,
+    range:false,
+    slidesToShow: 1,
     item:1,
   });
 
-  $("#client").owlCarousel({
+  $("#slide3").owlCarousel({
     dots: false,
+    slidesToShow: 5,
     item: 5,
   });
 });
