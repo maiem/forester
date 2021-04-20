@@ -1,2 +1,3 @@
 # forester
-Clone The forester - Just WordPress site
+The forester - Just WordPress site
+Pratice HTML, SCSS, JQuery
