@@ -35,6 +35,12 @@ textarea:focus {
   background: none;
 }
 
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
 *::-moz-selection {
   background: gray;
   color: white;
@@ -46,5 +52,29 @@ textarea:focus {
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 140px 0;
+  }
 }
 /*# sourceMappingURL=reset.css.map */

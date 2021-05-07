@@ -1,0 +1,207 @@
+@import "reset";
+@import "mixin";
+@import "media";
+
+header {
+  height: auto;
+
+  background-image: url("https://ninetheme.com/themes/forester/wp-content/uploads/2018/05/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .top-header {
+    height: 80px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      content: "";
+      width: 100%;
+      border-bottom: 1px solid $primaryColor;
+
+      position: absolute;
+      top: 80px;
+      left: 0;
+    }
+
+    .container {
+      padding: 0 0;
+
+      .row {
+        .col-md-6 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;
+
+          .menu {
+            nav {
+              ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                  a {
+                    text-transform: uppercase;
+                    color: $primaryColor;
+                    font-size: 10px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    padding: 15px;
+
+                    transition: all 0.2s ease-in;
+
+                    &:last-child {
+                      padding-right: 0;
+                    }
+
+                    &:hover {
+                      color: #ccc;
+                      transition: all 0.2s ease-in;
+                    }
+                  }
+                }
+              }
+
+              @include xs {
+                display: none;
+              }
+
+              @include md {
+                display: none;
+              }
+
+              @include lg {
+                display: block;
+              }
+            }
+          }
+
+          .logo {
+            align-items: center;
+            a {
+              padding: 15px;
+
+              img {
+                object-fit: cover;
+              }
+            }
+          }
+
+          .contact {
+            nav {
+              ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                  a {
+                    padding: 15px;
+                    transition: all 0.2s ease-in;
+
+                    &:last-child {
+                      padding-right: 0;
+                    }
+
+                    &:hover {
+                      i {
+                        color: #ccc;
+                        transition: all 0.2s ease-in;
+                      }
+                      span {
+                        color: #ccc;
+                        transition: all 0.2s ease-in;
+                      }
+                    }
+
+                    i {
+                      color: $primaryColor;
+                      font-size: 10px;
+                    }
+
+                    span {
+                      margin-left: 5px;
+
+                      &:first-child {
+                        margin-left: 0;
+                      }
+
+                      color: $primaryColor;
+                      font-size: 10px;
+                      font-weight: 600;
+                      letter-spacing: 1px;
+                      text-transform: uppercase;
+
+                      position: relative;
+
+                      &::before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+
+                        border-right: 1px solid #ccc;
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        transform: translate(-15px, 10%);
+                      }
+                    }
+                  }
+                }
+              }
+
+              @include xs {
+                display: none;
+              }
+
+              @include md {
+                display: none;
+              }
+
+              @include lg {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-header {
+    text-align: center;
+
+    .container {
+      .row {
+        .col-md-6 {
+          .wrapper {
+            .content-center {
+              @include content-center(true);
+            }
+
+            .button {
+              margin-top: 40px;
+
+              color: white;
+              text-transform: uppercase;
+              font-size: 12px;
+              font-weight: 500;
+              padding: 15px 40px;
+              border-radius: 30px;
+              background: $inputColor;
+
+              &:focus {
+                color: $secondaryColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
