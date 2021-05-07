@@ -2659,7 +2659,7 @@ footer .container .row .left .sub-menu nav ul li a:hover {
 
 @media (max-width: 576px) {
   footer .container .row .left .sub-contact {
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 20px;
   }
 }
