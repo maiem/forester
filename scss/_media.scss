@@ -1,9 +1,3 @@
-@mixin default {
-    @media (max-width: 400px) {
-        @content;
-    }
-}
-
 // MOBILE //
 @mixin xs {
     @media (max-width: 576px) {

@@ -8,11 +8,8 @@ $(document).ready(function () {
   });
 
   $("#slide2").owlCarousel({
-    loop: true,
-    autoPlay: true,
     dots: true,
     item: 1,
-    singleItem: true,
   });
 
   $("#slide3").owlCarousel({
