@@ -162,13 +162,36 @@ header .top-header .container .row .col-md-6 .menu nav ul li a:hover {
 
 @media (min-width: 768px) {
   header .top-header .container .row .col-md-6 .menu nav {
-    display: none;
+    display: block;
   }
 }
 
 @media (min-width: 992px) {
   header .top-header .container .row .col-md-6 .menu nav {
     display: block;
+  }
+}
+
+header .top-header .container .row .col-md-6 .menu .icon button i {
+  font-size: 18px;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  header .top-header .container .row .col-md-6 .menu .icon button {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  header .top-header .container .row .col-md-6 .menu .icon button {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  header .top-header .container .row .col-md-6 .menu .icon button {
+    display: none;
   }
 }
 

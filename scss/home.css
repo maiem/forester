@@ -2395,34 +2395,37 @@ img {
 
 .contact .container .row .right input,
 .contact .container .row .right textarea {
-  margin: 10px 0;
+  padding: 10px;
   width: 100%;
   height: 45px;
   background: rgba(223, 216, 216, 0.26);
   border-radius: 4px;
 }
 
+@media (max-width: 576px) {
+  .contact .container .row .right input,
+  .contact .container .row .right textarea {
+    height: 30px;
+  }
+}
+
 .contact .container .row .right input::-webkit-input-placeholder,
 .contact .container .row .right textarea::-webkit-input-placeholder {
-  padding: 15px;
   text-transform: capitalize;
 }
 
 .contact .container .row .right input:-ms-input-placeholder,
 .contact .container .row .right textarea:-ms-input-placeholder {
-  padding: 15px;
   text-transform: capitalize;
 }
 
 .contact .container .row .right input::-ms-input-placeholder,
 .contact .container .row .right textarea::-ms-input-placeholder {
-  padding: 15px;
   text-transform: capitalize;
 }
 
 .contact .container .row .right input::placeholder,
 .contact .container .row .right textarea::placeholder {
-  padding: 15px;
   text-transform: capitalize;
 }
 

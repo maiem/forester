@@ -70,11 +70,32 @@ header {
               }
 
               @include md {
-                display: none;
+                display: block;
               }
 
               @include lg {
                 display: block;
+              }
+            }
+
+            .icon{
+              button{
+                i{
+                  font-size: 18px;
+                  color: $primaryColor;
+                }
+  
+                @include xs {
+                  display: block;
+                }
+  
+                @include md {
+                  display: none;
+                }
+  
+                @include lg {
+                  display: none;
+                }
               }
             }
           }
