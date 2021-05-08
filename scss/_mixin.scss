@@ -17,6 +17,14 @@
     @include xs{
       font-size: 12px;
     }
+
+    @include md{
+      font-size: 12px;
+    }
+
+    @include lg{
+      font-size: 10px;
+    }
   }
 
   h5 {
@@ -26,11 +34,22 @@
       color: $secondaryColor;
     }
 
-    font-size: 18px;
     font-weight: 500;
 
     &:first-letter {
       text-transform: capitalize;
+    }
+
+    @include xs{
+      font-size: 14px;
+    }
+
+    @include md{
+      font-size: 16px;
+    }
+
+    @include lg{
+      font-size: 18px;
     }
   }
 
@@ -43,12 +62,19 @@
 
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 130px;
+    
     font-weight: 900;
 
     @include xs{
-      font-size: 50px;
-      font-weight: 900;
+      font-size: 45px;
+    }
+
+    @include md{
+      font-size: 100px;
+    }
+
+    @include lg{
+      font-size: 130px;
     }
   }
 
@@ -61,6 +87,18 @@
     text-transform: capitalize;
     font-size: 45px;
     font-weight: 700;
+
+    @include xs{
+      font-size: 40px;
+    }
+
+    @include md{
+      font-size: 40px;
+    }
+
+    @include lg{
+      font-size: 45px;
+    }
   }
 
   h3{
@@ -72,6 +110,18 @@
     text-transform: capitalize;
     font-size: 30px;
     font-weight: 600;
+
+    @include xs{
+      font-size: 20px;
+    }
+
+    @include md{
+      font-size: 30px;
+    }
+
+    @include lg{
+      font-size: 30px;
+    }
   }
 
   h4{
@@ -81,8 +131,19 @@
       color: $secondaryColor;
     }
     text-transform: capitalize;
-    font-size: 20px;
     font-weight: 600;
+
+    @include xs{
+      font-size: 15px;
+    }
+
+    @include md{
+      font-size: 20px;
+    }
+
+    @include lg{
+      font-size: 20px;
+    }
   }
 
   p{
@@ -96,8 +157,19 @@
       text-transform: capitalize;
     }
 
-    font-size: 14px;
     font-weight: 400;
     padding-top: 10px;
+
+    @include xs{
+      font-size: 12px;
+    }
+
+    @include md{
+      font-size: 14px;
+    }
+
+    @include lg{
+      font-size: 14px;
+    }
   }
 }

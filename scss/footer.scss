@@ -7,113 +7,109 @@ footer {
 
   .container {
     .row {
-      @include md {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      @include lg {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .left {
-        .sub-menu {
-          nav {
-            ul {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-
-              li {
-                a {
-                  text-transform: uppercase;
-                  color: $primaryColor;
-                  font-size: 10px;
-                  font-weight: 500;
-                  letter-spacing: 1px;
-                  padding: 10px;
-
-                  &:last-child {
-                    padding-right: 0;
-                  }
-
-                  &:hover {
-                    color: rgb(146, 141, 141);
+      .col-lg-6{
+        .left {
+          .sub-menu {
+            nav {
+              ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+  
+                li {
+                  a {
+                    text-transform: uppercase;
+                    color: $primaryColor;
+                    font-size: 10px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    padding: 10px;
+  
+                    &:last-child {
+                      padding-right: 0;
+                    }
+  
+                    &:hover {
+                      color: rgb(146, 141, 141);
+                    }
                   }
                 }
               }
             }
           }
-        }
-
-        .sub-contact {
-          @include xs{
-            margin: 20px 0;
-            font-size: 20px;
-          }
-
-          @include md {
-            display: flex;
-            align-items: center;
-          }
-
-          @include lg {
-            display: flex;
-            align-items: center;
-          }
-
-          .col {
-            margin-right: 20px;
-            &:last-child {
-              margin-right: 0;
+  
+          .sub-contact {
+            @include xs{
+              margin: 20px;
+              font-size: 10px;
             }
-
-            i {
-              font-size: 16px;
-              font-weight: 300;
-              color: $primaryColor;
+  
+            @include md {
+              margin: 10px;
+            }
+  
+            @include lg {
+              margin: 10px;
+            }
+  
+            .col {
+              margin-right: 20px;
+              &:last-child {
+                margin-right: 0;
+              }
+  
+              i {
+                font-size: 16px;
+                font-weight: 300;
+                color: $primaryColor;
+              }
             }
           }
         }
       }
 
-      .right {
-        @include xs {
-          text-align: start;
-          margin-top: 20px;
-        }
+      .col-lg-6{
+        .right {
+          @include xs {
+            margin: 20px;
+          }
+  
+          @include md {
+            margin: 20px;
+          }
+  
+          @include lg {
+            text-align: end;
+          }
+  
+          .logo {
+            img {
+              object-fit: cover;
+  
+              @include xs {
+                width: 30%;
+              }
 
-        @include md {
-          text-align: end;
-        }
+              @include md {
+                width: 30%;
+              }
 
-        @include lg {
-          text-align: end;
-        }
-
-        .logo {
-          img {
-            max-width: 100%;
-            width: 70%;
-
-            @include xs {
-              width: 30%;
+              @include lg {
+                width: 30%;
+              }
             }
           }
-        }
-
-        p {
-          text-transform: capitalize;
-          font-size: 14px;
-          color: $primaryColor;
-        }
-
-        a {
-          font-size: 14px;
-          color: $inputColor;
+  
+          p {
+            text-transform: capitalize;
+            font-size: 14px;
+            color: $primaryColor;
+          }
+  
+          a {
+            font-size: 14px;
+            color: $inputColor;
+          }
         }
       }
     }

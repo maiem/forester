@@ -29,7 +29,7 @@ header {
       padding: 0 0;
 
       .row {
-        .col-md-6 {
+        .col-md-12 {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -70,7 +70,7 @@ header {
               }
 
               @include md {
-                display: block;
+                display: none;
               }
 
               @include lg {
@@ -81,7 +81,7 @@ header {
             .icon{
               button{
                 i{
-                  font-size: 18px;
+                  font-size: 25px;
                   color: $primaryColor;
                 }
   
@@ -90,7 +90,7 @@ header {
                 }
   
                 @include md {
-                  display: none;
+                  display: block;
                 }
   
                 @include lg {
@@ -199,7 +199,7 @@ header {
 
     .container {
       .row {
-        .col-md-6 {
+        .col-md-12 {
           .wrapper {
             .content-center {
               @include content-center(true);
