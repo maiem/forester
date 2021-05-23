@@ -60,3 +60,7 @@ $(document).ready(function () {
 
 
 // HAN HIEN MENU TRONG XS // 
+$('#hide-show').click(function (e) { 
+  e.preventDefault();
+  $('#menu').slideToggle();
+});

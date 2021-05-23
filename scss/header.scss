@@ -12,8 +12,22 @@ header {
 
   .top-header {
     height: 80px;
-    position: relative;
     text-align: center;
+
+    @include xs {
+      position: fixed;
+      background: $secondaryColor;
+    }
+
+    @include md {
+      position: fixed;
+      background: $secondaryColor;
+    }
+
+    @include lg{
+      background: none;
+      position: relative;
+    }
 
     &::before {
       content: "";
@@ -29,7 +43,7 @@ header {
       padding: 0 0;
 
       .row {
-        .col-md-12 {
+        .col-md-6 {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -38,9 +52,19 @@ header {
           .menu {
             nav {
               ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include xs {
+                  display: block;
+                }
+
+                @include md {
+                  display: block;
+                }
+
+                @include lg{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                }
 
                 li {
                   a {
@@ -66,10 +90,22 @@ header {
               }
 
               @include xs {
+                display: flex;
+                justify-content: space-between;
+                background: $secondaryColor;
+                transform: translate(-3px,80px);
+                width: 100vw;
+
                 display: none;
               }
 
               @include md {
+                display: flex;
+                justify-content: space-between;
+                background: $secondaryColor;
+                transform: translate(-3px,80px);
+                width: 100vw;
+
                 display: none;
               }
 
@@ -87,10 +123,17 @@ header {
   
                 @include xs {
                   display: block;
+                  position: fixed;
+                  top: 3%;
+                  left: 3%;
                 }
   
                 @include md {
                   display: block;
+                  position: fixed;
+
+                  top: 3%;
+                  left: 3%;
                 }
   
                 @include lg {
@@ -100,10 +143,51 @@ header {
             }
           }
 
-          .logo {
+          .logo-light {
             align-items: center;
+
             a {
               padding: 15px;
+
+              @include xs{
+                display: none;
+              }
+
+              @include md{
+                display: none;
+              }
+
+              @include lg{
+                position:relative;
+              }
+
+              img {
+                object-fit: cover;
+              }
+            }
+          }
+
+          .logo-dark {
+            align-items: center;
+
+            a {
+              padding: 15px;
+
+              @include xs{
+                position: fixed;
+                top: 0;
+                right: 0;
+              }
+
+              @include md{
+                position: fixed;
+                right: 0;
+              }
+
+              @include lg{
+                position:relative;
+                display: none;
+              }
 
               img {
                 object-fit: cover;
